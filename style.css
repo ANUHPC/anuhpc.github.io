@@ -151,6 +151,7 @@ a {
     width: 33.33%;
     padding: 30px;
     text-align: center;
+    vertical-align: top;
 }
 
 .team-grid img {
