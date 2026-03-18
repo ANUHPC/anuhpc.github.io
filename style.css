@@ -59,11 +59,17 @@ a {
 .hero {
     position: relative;
     height: 100vh;
-    background: url("HPC\ Image.jpg") center center/cover no-repeat;
+    background: url("images/HPC\ Image.jpg") center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Adjusts spacing: center, space-around, space-between, etc. */
+  gap: 100px; /* Adds space between images */
 }
 
 .overlay {
@@ -124,7 +130,8 @@ a {
 }
 
 .content-section.alt {
-    background: #1a1a1a;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 .content-section h2 {
