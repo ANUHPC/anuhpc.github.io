@@ -136,6 +136,43 @@ a {
     font-size: 1.2rem;
     max-width: 800px;
     line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Team Grid */
+.team-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    table-layout: fixed;
+}
+
+.team-grid td {
+    width: 33.33%;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-grid strong {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.team-grid p {
+    font-size: 1rem;
+    max-width: 100%;
 }
 
 /* Responsive */
