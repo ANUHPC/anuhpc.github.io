@@ -11,11 +11,21 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: #0b0b0b;
+    background-color: #1e1e1e;
 }
 
 a {
     text-decoration: none;
+}
+
+a:link {
+    color: #dfbf33;
+}
+a:visited {
+    color: #8ce500;
+}
+a:hover {
+    color: #e6bbad;
 }
 
 /* Navbar */
@@ -52,7 +62,7 @@ a {
 }
 
 .nav-links a:hover {
-    color: #7fdcff;
+    color: #add8e6;
 }
 
 /* Hero section */
@@ -120,9 +130,9 @@ a {
 
 /* Content sections */
 .content-section {
-    min-height: 100vh;
+    min-height: auto;
     padding: 120px 10% 80px;
-    background: #111;
+    background: transparent;
     color: white;
     display: flex;
     flex-direction: column;
