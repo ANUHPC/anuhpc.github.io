@@ -78,8 +78,8 @@ a:hover {
 
 .image-container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: center; /* Adjusts spacing: center, space-around, space-between, etc. */
+  gap: 100px; /* Adds space between images */
 }
 
 .overlay {
@@ -136,98 +136,25 @@ a:hover {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    background: #1c1c1c;
 }
 
-main {
-    background: linear-gradient(to bottom,#1e1e1e,#5a88b3,#79828b);
+.content-section.alt {
+    background: #30b2ee;
 }
 
-.content-section h2 {
+.content-section.alt h2 {
     font-size: 2.8rem;
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
-.content-section p {
+.content-section.alt p {
     font-size: 1.2rem;
     max-width: 800px;
     line-height: 1.8;
-    margin-bottom: 30px;
-    color: white;
-}
-
-/* Team Grid */
-.team-grid {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 40px;
-    table-layout: fixed;
-}
-
-.team-grid td {
-    width: 33.33%;
-    padding: 30px;
-    text-align: center;
-    vertical-align: top;
-}
-
-.team-grid img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.team-grid strong {
-    display: block;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.team-grid p {
-    font-size: 1rem;
-    max-width: 100%;
-}
-/* Prof Grid */
-.prof-grid {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 40px;
-    table-layout: fixed;
-}
-
-.prof-grid td {
-    width: 33.33%;
-    padding: 30px;
-    text-align: center;
-    vertical-align: top;
-}
-
-.prof-grid img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.prof-grid strong {
-    display: block;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.prof-grid p {
-    font-size: 1rem;
-    max-width: 100%;
+    color: #000000;
 }
 
 /* Responsive */
