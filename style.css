@@ -11,11 +11,21 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: #0b0b0b;
+    background-color: #1e1e1e;
 }
 
 a {
     text-decoration: none;
+}
+
+a:link {
+    color: #dfbf33;
+}
+a:visited {
+    color: #8ce500;
+}
+a:hover {
+    color: #e6bbad;
 }
 
 /* Navbar */
@@ -52,18 +62,24 @@ a {
 }
 
 .nav-links a:hover {
-    color: #7fdcff;
+    color: #add8e6;
 }
 
 /* Hero section */
 .hero {
     position: relative;
     height: 100vh;
-    background: url("HPC\ Image.jpg") center center/cover no-repeat;
+    background: url("images/HPC\ Image.jpg") center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .overlay {
@@ -114,22 +130,23 @@ a {
 
 /* Content sections */
 .content-section {
-    min-height: 100vh;
+    min-height: auto;
     padding: 120px 10% 80px;
-    background: #111;
+    background: transparent;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.content-section.alt {
-    background: #1a1a1a;
+main {
+    background: linear-gradient(to bottom,#1e1e1e,#5a88b3,#79828b);
 }
 
 .content-section h2 {
     font-size: 2.8rem;
     margin-bottom: 20px;
+    color: white;
 }
 
 .content-section p {
@@ -137,6 +154,7 @@ a {
     max-width: 800px;
     line-height: 1.8;
     margin-bottom: 30px;
+    color: white;
 }
 
 /* Team Grid */
