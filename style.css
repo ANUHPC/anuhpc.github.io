@@ -1324,62 +1324,77 @@ a {
     padding: 100px 10%;
 }
 
-/* Grid */
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    table-layout: fixed;
 }
 
-/* Card */
-.team-card {
-    background: #1a1a1a;
-    border: 1px solid rgba(127, 220, 255, 0.25);
-    border-radius: 16px;
-    padding: 25px;
+.team-grid td {
+    width: 33.33%;
+    padding: 30px;
     text-align: center;
-    transition: 0.25s ease;
+    vertical-align: top;
 }
 
-.team-card:hover {
-    transform: translateY(-6px);
-    border-color: #7fdcff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-/* Image */
-.team-card img {
-    width: 120px;
-    height: 120px;
+.team-grid img {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-bottom: 15px;
-    border: 3px solid #7fdcff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Name */
-.team-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 6px;
-    color: #7fdcff;
-}
-
-/* Role */
-.team-role {
-    font-size: 0.85rem;
-    color: #aaa;
+.team-grid strong {
+    display: block;
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
-/* Description */
-.team-card p {
-    font-size: 0.9rem;
-    color: #ccc;
-    line-height: 1.5;
+.team-grid p {
+    font-size: 1rem;
+    max-width: 100%;
+}
+/* Prof Grid */
+.prof-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    table-layout: fixed;
 }
 
-.team-card.advisor {
-    margin-top: 10px;
+.prof-grid td {
+    width: 33.33%;
+    padding: 30px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.prof-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prof-grid strong {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.prof-grid p {
+    font-size: 1rem;
+    max-width: 100%;
+    color: #000000;
 }
 
 .team-view {
