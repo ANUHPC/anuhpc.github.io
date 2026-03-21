@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPC Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">HPC Team</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hardware.html">Our Hardware</a></li>
+                <li><a href="sponsors.html">Our Sponsors</a></li>
+                <li><a href="team.html">The Team</a></li>
+                <li class="dropdown">
+                    <a href="#">Past Years</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://anuhpc2025.github.io/Main-Website/index.html" target="_blank">
+                                2025
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">ANU HPC Team</h1>
+            <p class="hero-tagline">To design, optimise, and deploy high-performance computing systems that maximise efficiency, scalability, and innovation, empowering our team to compete at the highest level.</p>
+            <p class="hero-mission-credit">ANU HPC Mission Statement</p>
+            <a href="#about" class="scroll-arrow">&#9662;</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="content-section alt">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        We are a passionate HPC team focused on solving complex computational
+                        problems, developing advanced technical skills, and competing at the
+                        highest level.
+                    </p>
+                    <p>We are a team of ANU students driven to compete at the highest level 
+                        in the <a href="https://www.studentclustercompetition.com/">Student Cluster Competition</a>. Our goal is to design, build, 
+                        and optimise a high-performance computing cluster that delivers maximum 
+                        performance under strict power and cost constraints. Through rigorous 
+                        benchmarking, system tuning, and teamwork, we aim to push our hardware 
+                        and skills to their limits while representing ANU on the global HPC stage.
+                    </p>
+                    <p>
+                        Alongside our competition efforts, we are developing a GPU-accelerated 
+                        version of the <a href="https://iqtree.org/">IQ-TREE</a> phylogenetic software. This project focuses on 
+                        porting computationally intensive components to run efficiently on 
+                        modern GPU architectures, significantly reducing runtime for large-scale 
+                        evolutionary analyses. By combining parallel programming techniques with 
+                        HPC optimisation strategies, we aim to make cutting-edge bioinformatics 
+                        tools faster and more accessible for researchers.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/Duck.png" alt="Duck" style="width: 300px; height: auto;">
+                </div>
+            </div>
+        </section>
+
+        <section id="hardware" class="content-section">
+            <h2>Our Hardware</h2>
+            <p>
+                Our systems are engineered to balance performance, power efficiency, and scalability,
+                enabling us to tackle demanding HPC workloads and competition benchmarks.
+            </p>
+
+            <div class="hardware-grid">
+
+                <!-- XENON -->
+                <div class="hardware-card">
+                    <h3>XENON GPU Cluster</h3>
+                    <div class="hardware-spec">8× NVIDIA A100 GPUs</div>
+
+                    <ul>
+                        <li>High-end GPU acceleration for AI & HPC workloads</li>
+                        <li>Optimised for CUDA, OpenMP, and hybrid MPI+GPU workloads</li>
+                        <li>Used for IQ-TREE GPU port and parallel compute tasks</li>
+                        <li>High memory bandwidth for large-scale simulations</li>
+                    </ul>
+
+                    <p class="hardware-footer">
+                        Primary system for GPU optimisation and compute-intensive applications.
+                    </p>
+                </div>
+
+                <!-- RAIJIN -->
+                <div class="hardware-card">
+                    <h3>Raijin Test Cluster</h3>
+                    <div class="hardware-spec">12× CPU Compute Nodes</div>
+
+                    <ul>
+                        <li>Multi-node distributed system for MPI benchmarking</li>
+                        <li>Used for HPL tuning and SCC workload simulation</li>
+                        <li>Supports hybrid MPI + OpenMP configurations</li>
+                        <li>Ideal for scaling tests and network performance analysis</li>
+                    </ul>
+
+                    <p class="hardware-footer">
+                        Core platform for cluster design, optimisation, and experimentation.
+                    </p>
+                </div>
+
+                <!-- GADI -->
+                <div class="hardware-card">
+                    <h3>NCI Gadi Supercomputer</h3>
+                    <div class="hardware-spec">National HPC Facility</div>
+
+                    <ul>
+                        <li>Access to thousands of CPU cores and GPU nodes</li>
+                        <li>Used for large-scale simulations and validation runs</li>
+                        <li>SLURM-based workload scheduling environment</li>
+                        <li>Supports production-level HPC workflows</li>
+                    </ul>
+
+                    <p class="hardware-footer">
+                        Enables testing at scale beyond local hardware limitations.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section id="sponsors" class="content-section alt">
+    <h2>Our Sponsors</h2>
+    <p>
+        We are proud to be supported by academic and industry partners who help us
+        develop, build, and optimise high-performance computing systems.
+    </p>
+
+    <div class="sponsors-preview">
+
+        <!-- ANU -->
+        <div class="sponsor-mini">
+    <a href="https://www.anu.edu.au/" target="_blank">
+        <img src="images/logo-ANU-black.svg" alt="ANU">
+    </a>
+    <p class="sponsor-name">ANU</p>
+    <p class="sponsor-desc">
+        Leading research university supporting our team’s academic and technical development.
+    </p>
+</div>
+        <!-- XENON -->
+        <div class="sponsor-mini">
+    <a href="https://xenon.com.au/" target="_blank">
+        <img src="images/xenon.png" alt="XENON">
+    </a>
+    <p class="sponsor-name">XENON</p>
+    <p class="sponsor-desc">
+        Provides HPC hardware, GPU systems, and industry expertise for our workloads.
+    </p>
+</div>
+    </div>
+
+    <!-- CTA -->
+    <div class="sponsor-cta-mini">
+        <h3>We’re Looking for Sponsors</h3>
+        <p>
+            Partner with us to support student innovation in high-performance computing
+            and gain visibility in cutting-edge engineering projects.
+        </p>
+
+        <a href="sponsors.html" class="cta-button">Sponsor Us</a>
+    </div>
+</section>
+    </main>
+
+</body>
+</html>
