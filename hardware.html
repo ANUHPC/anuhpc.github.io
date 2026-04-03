@@ -48,25 +48,39 @@
             <div class="hardware-detail-card">
                 <div class="hardware-detail-text">
                     <h2>XENON GPU Cluster</h2>
-                    <p class="hardware-subtitle">16× NVIDIA A100 GPUs</p>
+                    <p class="hardware-subtitle">4× XENON NITRO GN29A Duo Nodes &nbsp;·&nbsp; 16× A100 40GB SXM4 GPUs &nbsp;·&nbsp; 8× AMD EPYC 7313 CPUs</p>
 
                     <p>
-                        The XENON GPU system is our primary platform for GPU-accelerated workloads.
-                        With access to 16 NVIDIA A100 GPUs, this cluster is ideal for massively
-                        parallel applications that benefit from high memory bandwidth and strong
-                        floating-point performance.
+                        The XENON GPU cluster consists of 4 XENON NITRO GN29A Duo 2RU nodes.
+                        Each node is equipped with 2 AMD EPYC 7313 CPUs, 4 NVIDIA A100 40GB SXM4
+                        GPUs, and 512GB of DDR4-3200 ECC RAM delivering a combined total of
+                        16 A100 GPUs and 8 EPYC processors across the cluster.
                     </p>
 
                     <p>
-                        This system is particularly valuable for development work involving CUDA,
-                        GPU-enabled scientific applications, and hybrid CPU-GPU workflows. It is
-                        also central to our efforts to accelerate phylogenetic software such as
-                        IQ-TREE by porting computationally expensive components onto GPUs.
+                        Each node also carries a 1.9TB PM9A3 NVMe SSD for fast local storage,
+                        alongside dual 240GB M5400 PRO SATA SSDs for the OS. The cluster is
+                        interconnected via a Mellanox SX6025 high-speed switch and a Dell
+                        PowerConnect 5548, with dual 3000W Titanium redundant PSUs per node
+                        ensuring reliability under sustained load.
                     </p>
+
+                    <h3>Node Specifications</h3>
+                    <ul>
+                        <li><strong>Nodes:</strong> 4× XENON NITRO GN29A Duo (2RU)</li>
+                        <li><strong>CPU:</strong> 2× AMD EPYC 7313 per node (8 total)</li>
+                        <li><strong>RAM:</strong> 16× 32GB DDR4-3200 LP ECC RDIMM (512GB per node)</li>
+                        <li><strong>GPU:</strong> 4× NVIDIA A100 40GB SXM4 per node (16 total)</li>
+                        <li><strong>OS Disk:</strong> 2× M5400 PRO 240GB SATA SSD per node</li>
+                        <li><strong>Data Disk:</strong> PM9A3 1.9TB NVMe SSD per node</li>
+                        <li><strong>PSU:</strong> 2× 3000W Titanium RPSU per node</li>
+                        <li><strong>Networking:</strong> Mellanox SX6025 1RU + Dell PowerConnect 5548 1RU</li>
+                    </ul>
 
                     <h3>Key Uses</h3>
                     <ul>
                         <li>GPU acceleration for scientific and AI workloads</li>
+                        <li>Hybrid CPU-GPU workloads leveraging AMD EPYC cores alongside A100s</li>
                         <li>Development and optimisation of GPU-enabled applications</li>
                         <li>Testing parallel performance on modern accelerator hardware</li>
                         <li>Supporting compute-heavy competition applications</li>
@@ -146,7 +160,7 @@
                         <li>Large-scale research and simulation workloads</li>
                         <li>Testing jobs on nationally significant HPC infrastructure</li>
                         <li>Running workloads that exceed local hardware capacity</li>
-                        <li>Experience with remote supercomputing environments and schedulers</li>
+                        <li>Experience with PBS Pro scheduling on national supercomputing infrastructure</li>
                     </ul>
 
                     <h3>Why It Matters</h3>
@@ -154,6 +168,45 @@
                         Gadi connects our team to real-world national HPC infrastructure. It helps
                         bridge the gap between local experimentation and the larger-scale systems
                         used by researchers and industry across Australia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hardware-detail-section alt-section">
+            <div class="hardware-detail-card">
+                <div class="hardware-detail-text">
+                    <h2>Pawsey Setonix</h2>
+                    <p class="hardware-subtitle">Pawsey Supercomputing Research Centre</p>
+
+                    <p>
+                        We also have access to Setonix at the Pawsey Supercomputing Research
+                        Centre in Perth, one of the world's most energy-efficient supercomputers
+                        and a flagship resource for Australian research. Setonix provides large
+                        CPU and GPU partitions across thousands of nodes, built on AMD EPYC
+                        processors and AMD Instinct GPU accelerators.
+                    </p>
+
+                    <p>
+                        Access to Setonix allows our team to run workloads at a national scale,
+                        validate performance optimisations, and gain hands-on experience with
+                        the tools, schedulers, and workflows used in professional HPC environments.
+                    </p>
+
+                    <h3>Key Uses</h3>
+                    <ul>
+                        <li>Large-scale GPU-accelerated and CPU-parallel workloads</li>
+                        <li>Validation of optimisations beyond local hardware capacity</li>
+                        <li>Experience with Slurm scheduling on a national supercomputer</li>
+                        <li>Supporting memory-intensive and high-throughput research jobs</li>
+                    </ul>
+
+                    <h3>Why It Matters</h3>
+                    <p>
+                        Setonix gives our team access to world-class infrastructure and exposes us
+                        to the scale of computing used by leading researchers across Australia.
+                        It reinforces our ability to develop, test, and optimise HPC applications
+                        in a real national supercomputing environment.
                     </p>
                 </div>
             </div>
