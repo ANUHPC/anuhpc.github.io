@@ -85,13 +85,13 @@
                 <!-- XENON -->
                 <div class="hardware-card">
                     <h3>XENON GPU Cluster</h3>
-                    <div class="hardware-spec">16× NVIDIA A100 GPUs</div>
+                    <div class="hardware-spec">16× A100 40GB SXM4 GPUs &nbsp;·&nbsp; 8× AMD EPYC 7313 CPUs</div>
 
                     <ul>
                         <li>High-end GPU acceleration for AI & HPC workloads</li>
+                        <li>Hybrid CPU-GPU workloads leveraging AMD EPYC cores alongside A100s</li>
                         <li>Optimised for CUDA, OpenMP, and hybrid MPI+GPU workloads</li>
                         <li>Used for IQ-TREE GPU port and parallel compute tasks</li>
-                        <li>High memory bandwidth for large-scale simulations</li>
                     </ul>
 
                     <p class="hardware-footer">
@@ -124,7 +124,7 @@
                     <ul>
                         <li>Access to thousands of CPU cores and GPU nodes</li>
                         <li>Used for large-scale simulations and validation runs</li>
-                        <li>SLURM-based workload scheduling environment</li>
+                        <li>PBS Pro workload scheduling environment</li>
                         <li>Supports production-level HPC workflows</li>
                     </ul>
 
@@ -133,50 +133,54 @@
                     </p>
                 </div>
 
+                <!-- PAWSEY -->
+                <div class="hardware-card">
+                    <h3>Pawsey Setonix Supercomputer</h3>
+                    <div class="hardware-spec">Pawsey Supercomputing Research Centre</div>
+
+                    <ul>
+                        <li>One of the world's most energy-efficient supercomputers</li>
+                        <li>Access to large-scale CPU and GPU partitions</li>
+                        <li>SLURM-based scheduling across thousands of nodes</li>
+                        <li>Supports GPU-accelerated and memory-intensive workloads</li>
+                    </ul>
+
+                    <p class="hardware-footer">
+                        Expands our capacity for large-scale HPC research and benchmarking.
+                    </p>
+                </div>
+
             </div>
         </section>
         <section id="sponsors" class="content-section alt">
-    <h2>Our Sponsors</h2>
-    <p>
-        We are proud to be supported by academic and industry partners who help us
-        develop, build, and optimise high-performance computing systems.
-    </p>
+            <div class="sponsors-header">
+                <h2>Our Sponsors</h2>
+                <p>Proud to be supported by leading academic and industry partners.</p>
+            </div>
 
-    <div class="sponsors-preview">
+            <div class="sponsors-logo-strip">
+                <a href="https://www.anu.edu.au/" target="_blank" class="sponsor-logo-item">
+                    <img src="images/logo-ANU-black.svg" alt="ANU">
+                    <span>ANU</span>
+                </a>
+                <a href="https://xenon.com.au/" target="_blank" class="sponsor-logo-item">
+                    <img src="images/xenon.png" alt="XENON">
+                    <span>XENON</span>
+                </a>
+                <a href="https://pawsey.org.au/" target="_blank" class="sponsor-logo-item">
+                    <img src="images/pawsey-logo.png" alt="Pawsey">
+                    <span>Pawsey</span>
+                </a>
+                <a href="https://nci.org.au/" target="_blank" class="sponsor-logo-item">
+                    <img src="images/nci-logo.svg" alt="NCI">
+                    <span>NCI</span>
+                </a>
+            </div>
 
-        <!-- ANU -->
-        <div class="sponsor-mini">
-    <a href="https://www.anu.edu.au/" target="_blank">
-        <img src="images/logo-ANU-black.svg" alt="ANU">
-    </a>
-    <p class="sponsor-name">ANU</p>
-    <p class="sponsor-desc">
-        Leading research university supporting our team’s academic and technical development.
-    </p>
-</div>
-        <!-- XENON -->
-        <div class="sponsor-mini">
-    <a href="https://xenon.com.au/" target="_blank">
-        <img src="images/xenon.png" alt="XENON">
-    </a>
-    <p class="sponsor-name">XENON</p>
-    <p class="sponsor-desc">
-        Provides HPC hardware, GPU systems, and industry expertise for our workloads.
-    </p>
-</div>
-    </div>
-
-    <!-- CTA -->
-    <div class="sponsor-cta-mini">
-        <h3>We’re Looking for Sponsors</h3>
-        <p>
-            Partner with us to support student innovation in high-performance computing
-            and gain visibility in cutting-edge engineering projects.
-        </p>
-
-        <a href="sponsors.html" class="cta-button">Sponsor Us</a>
-    </div>
-</section>
+            <div class="sponsors-strip-footer">
+                <a href="sponsors.html" class="cta-button">View All Sponsors</a>
+            </div>
+        </section>
     </main>
 
 </body>
